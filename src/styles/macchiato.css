@@ -10,5 +10,6 @@
     --text-1: var(--ctp-macchiato-text);
     --text-2: var(--ctp-macchiato-subtext0);
     color-scheme: macchiato;
+    color: var(--text-1);
   }
 }

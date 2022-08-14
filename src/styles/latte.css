@@ -9,4 +9,5 @@
   --text-1: var(--ctp-latte-text);
   --text-2: var(--ctp-latte-subtext0);
   color-scheme: latte;
+  color: var(--text-1);
 }

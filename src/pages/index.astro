@@ -22,6 +22,11 @@ import '../style'
     <meta name="application-name" content="Macchiato" />
     <meta name="msapplication-TileColor" content="#2b5797" />
     <meta name="theme-color" content="#24273a" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+      }
+    </script>
 	</head>
 	<body>
     <Header />

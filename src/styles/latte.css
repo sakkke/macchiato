@@ -1,0 +1,12 @@
+:where(html) {
+  --link: var(--ctp-latte-blue);
+  --link-visited: var(--ctp-latte-mauve);
+  --scrollthumb-color: var(--ctp-latte-overray0);
+  --surface-1: var(--ctp-latte-base);
+  --surface-2: var(--ctp-latte-surface0);
+  --surface-3: var(--ctp-latte-surface1);
+  --surface-4: var(--ctp-latte-surface2);
+  --text-1: var(--ctp-latte-text);
+  --text-2: var(--ctp-latte-subtext0);
+  color-scheme: latte;
+}

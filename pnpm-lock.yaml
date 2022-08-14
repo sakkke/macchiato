@@ -3,9 +3,11 @@ lockfileVersion: 5.4
 specifiers:
   '@catppuccin/palette': ^0.1.5
   astro: ^1.0.5
+  open-props: ^1.4.12
 
 dependencies:
   '@catppuccin/palette': 0.1.5
+  open-props: 1.4.12
 
 devDependencies:
   astro: 1.0.5
@@ -2204,6 +2206,10 @@ packages:
     dependencies:
       mimic-fn: 4.0.0
     dev: true
+
+  /open-props/1.4.12:
+    resolution: {integrity: sha512-4KZz+GrvnkkAN0LelA52B//q7ROWk38LvqUXJltfVgZt7wCUCdmsuJb/gtzMypi5I8Q3nJM/kne3++VUL6nAJA==}
+    dev: false
 
   /ora/6.1.2:
     resolution: {integrity: sha512-EJQ3NiP5Xo94wJXIzAyOtSb0QEIAUu7m8t6UZ9krbz0vAJqr92JpcK/lEXg91q6B9pEGqrykkd2EQplnifDSBw==}

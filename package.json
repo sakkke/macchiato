@@ -13,6 +13,7 @@
     "astro": "^1.0.5"
   },
   "dependencies": {
-    "@catppuccin/palette": "^0.1.5"
+    "@catppuccin/palette": "^0.1.5",
+    "open-props": "^1.4.12"
   }
 }

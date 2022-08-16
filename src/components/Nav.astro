@@ -1,11 +1,34 @@
 ---
+import logo from '../assets/logo-hybrid.svg'
 ---
 
-<nav>
+<style>
+  .logo {
+    height: 24px;
+  }
+
+  .navbar {
+    line-height: 0;
+  }
+
+  .navbar li {
+    max-inline-size: none;
+  }
+
+  .navbar li,
+  .navbar ul {
+    padding-inline-start: 0;
+  }
+</style>
+<nav class="navbar">
   <ul>
     <li>
       <a href="/">
-        Macchiato
+        <img
+          alt="Logo of Macchiato."
+          class="logo"
+          src={logo}
+        />
       </a>
     </li>
   </ul>

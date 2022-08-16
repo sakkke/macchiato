@@ -1,6 +1,38 @@
 ---
 ---
 
+<style>
+  main {
+    display: grid;
+    place-items: center;
+  }
+
+  .hero__container {
+    text-align: center;
+  }
+
+  .hero__content {
+    font-size: var(--font-size-fluid-1);
+  }
+
+  .hero__title {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, var(--sky), var(--yellow));
+    font-size: var(--font-size-fluid-3);
+    max-inline-size: none;
+    padding: 1ch 0;
+    text-shadow: -5px -5px var(--text-1);
+    width: fit-content;
+  }
+</style>
 <main>
-  <h1>Astro</h1>
+  <div class="hero__container">
+    <h1 class="hero__title">
+      Hi There!!
+    </h1>
+    <p class="hero__content">
+      I'm Konosuke Sakai.
+    </p>
+  </div>
 </main>

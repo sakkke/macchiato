@@ -8,16 +8,25 @@ import logo from '../assets/logo-hybrid.svg'
   }
 
   .navbar {
+    box-shadow: var(--shadow-2);
+    height: 48px;
     line-height: 0;
   }
 
   .navbar li {
+    display: grid;
     max-inline-size: none;
+    place-items: center;
   }
 
   .navbar li,
   .navbar ul {
     padding-inline-start: 0;
+  }
+
+  .navbar ul {
+    display: grid;
+    height: inherit;
   }
 </style>
 <nav class="navbar">

@@ -1,8 +1,24 @@
 ---
+import avatar from '../assets/avatar.png'
 import logo from '../assets/logo-hybrid.svg'
 ---
 
 <style>
+  .avatar {
+    width: 32px;
+  }
+
+  .avatar__container {
+    /** 48 - 32 = 16 */
+    margin-left: 16px;
+    width: fit-content;
+  }
+
+  .avatar__link {
+    padding-block: 0;
+    padding-inline: 0;
+  }
+
   .logo {
     height: 24px;
   }
@@ -26,11 +42,24 @@ import logo from '../assets/logo-hybrid.svg'
 
   .navbar ul {
     display: grid;
+    grid-template-columns: 1fr auto 1fr;
     height: inherit;
   }
 </style>
 <nav class="navbar">
   <ul>
+    <li class="avatar__container">
+      <a
+        class="avatar__link"
+        href="/profile"
+      >
+        <img
+          alt="Avatar of sakkke."
+          class="avatar"
+          src={avatar}
+        />
+      </a>
+    </li>
     <li>
       <a href="/">
         <img

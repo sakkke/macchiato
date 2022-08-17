@@ -9,12 +9,6 @@ import logo from '../assets/logo-hybrid.svg'
     width: 32px;
   }
 
-  .avatar__container {
-    /** 48 - 32 = 16 */
-    margin-left: 16px;
-    width: fit-content;
-  }
-
   .avatar__link {
     padding-block: 0;
     padding-inline: 0;
@@ -35,19 +29,22 @@ import logo from '../assets/logo-hybrid.svg'
   }
 
   .logo {
-    height: 24px;
+    height: 32px;
+  }
+
+  .logo__container {
+    margin-right: auto;
   }
 
   .navbar {
-    box-shadow: var(--shadow-2);
-    height: 48px;
+    border-bottom: 1px solid var(--surface-2);
+    box-sizing: content-box;
+    height: 56px;
     line-height: 0;
   }
 
   .navbar li {
-    display: grid;
-    max-inline-size: none;
-    place-items: center;
+    display: inline;
   }
 
   .navbar li,
@@ -55,31 +52,22 @@ import logo from '../assets/logo-hybrid.svg'
     padding-inline-start: 0;
   }
 
-  .navbar > ul {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+  .navbar ul {
+    align-items: center;
+    display: flex;
+    gap: 16px;
     height: inherit;
+    margin: 0 16px;
   }
 
   .themeToggler {
     background-color: inherit;
     padding: 0;
   }
-
-  .utilities__container {
-    margin-left: auto;
-    margin-right: 16px;
-    width: fit-content;
-  }
-
-  .utilities__container > ul {
-    display: flex;
-    gap: 16px;
-  }
 </style>
 <nav class="navbar">
   <ul>
-    <li class="avatar__container">
+    <li>
       <a
         class="avatar__link"
         href="/profile"
@@ -91,36 +79,30 @@ import logo from '../assets/logo-hybrid.svg'
         />
       </a>
     </li>
-    <li class="toggleTheme__container">
-      <a href="/">
-        <img
-          alt="Logo of Macchiato."
-          class="logo"
-          src={logo}
-        />
-      </a>
+    <li class="logo__container">
+      <img
+        alt="Logo of Macchiato."
+        class="logo"
+        src={logo}
+      />
     </li>
-    <li class="utilities__container">
-      <ul>
-        <li>
-          <button class="themeToggler">
-            <Icon
-              name="eva:sun-fill"
-              size="32"
-            />
-          </button>
-        </li>
-        <li>
-          <details class="detailsMenu">
-            <summary>
-              <Icon
-                name="eva:menu-fill"
-                size="32"
-              />
-            </summary>
-          </details>
-        </li>
-      </ul>
+    <li>
+      <button class="themeToggler">
+        <Icon
+          name="eva:sun-fill"
+          size="48"
+        />
+      </button>
+    </li>
+    <li>
+      <details class="detailsMenu">
+        <summary>
+          <Icon
+            name="eva:menu-fill"
+            size="48"
+          />
+        </summary>
+      </details>
     </li>
   </ul>
 </nav>
